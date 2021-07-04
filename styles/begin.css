@@ -1,0 +1,57 @@
+@media only screen and (max-width: 600px) {
+  body {
+    display: none;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: rebeccapurple;
+    color: white;
+    font-family: 'Jura', sans-serif;
+  }
+  body .title {
+    text-align: center;
+    -webkit-transform: translateY(70%);
+            transform: translateY(70%);
+  }
+  body .nav-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 95%;
+    margin: 0 auto;
+  }
+  body .nav-container .arrow {
+    width: 90%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+  }
+  body .nav-container .arrow .right-arrow-img {
+    background-image: url("../img/polo-6n1_400x400-right.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+    margin: 80% auto;
+  }
+  body .nav-container .right-arrow:hover .right-arrow-img {
+    filter: drop-shadow(1px 2px 60px white);
+    -webkit-filter: drop-shadow(1px 2px 60px white);
+    -moz-filter: drop-shadow(1px 2px 60px white);
+  }
+}
+/*# sourceMappingURL=begin.css.map */

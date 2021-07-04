@@ -1,0 +1,218 @@
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: rebeccapurple;
+    color: white;
+    font-family: 'Jura', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+  }
+  body .blackout {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 20;
+  }
+  body .finish-container {
+    position: absolute;
+    top: -100vh;
+    left: 0;
+    width: 100%;
+    height: 70vh;
+    z-index: 10;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body .finish-container .win-text {
+    font-size: 1.6em;
+    text-align: center;
+  }
+  body .finish-container .car {
+    background-image: url("../img/polo-6n1_400x400-right.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  body .content-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 90%;
+    margin: 0 auto;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  body .content-container .title {
+    font-size: 1.6em;
+    height: 40px;
+    text-align: center;
+    font-weight: bold;
+  }
+  body .content-container .score {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    height: 10%;
+    width: 95%;
+  }
+  body .content-container .game-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 60%;
+    width: 90%;
+    margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  body .content-container .game-container .crypto {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.8em;
+    letter-spacing: 0.5rem;
+    font-family: "Alegreya Sans SC", sans-serif;
+  }
+  body .content-container .game-container .abc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 90%;
+    margin: 0 auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body .content-container .game-container .abc .abcrow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .content-container .game-container .abc .abcrow .key {
+    display: block;
+    padding: 6px 12px;
+    background-color: #3b246b;
+    border: none;
+    color: white;
+    margin: 3px;
+    border: 2px solid #311f56;
+    border-radius: 3px;
+    font-family: 'Comfortaa', cursive;
+  }
+  body .content-container .game-container .abc .abcrow .key:active {
+    background-color: #653eb7;
+  }
+  body .content-container .game-container .abc .abcrow .key:disabled {
+    background-color: #c6aaff;
+    border: 2px solid #c6aaff;
+    color: aliceblue;
+  }
+  body .content-container .game-container .reveal-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 70%;
+    height: 40px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  body .content-container .game-container .reveal-container .reveal-label, body .content-container .game-container .reveal-container .ans {
+    display: none;
+  }
+  body .content-container .game-container .btn-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 70px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+  }
+  body .content-container .game-container .btn-container .btn {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    width: 40%;
+    margin: 0 auto;
+    font-family: 'Jura', sans-serif;
+    font-size: 0.9em;
+    text-align: center;
+    border-radius: 12px;
+    border: none;
+  }
+  body .content-container .game-container .btn-container .next-word {
+    visibility: hidden;
+    background-color: #93ab26;
+  }
+  body .content-container .game-container .btn-container .next-word:active {
+    background-color: #bcd648;
+  }
+  body .content-container .game-container .btn-container .reset-btn {
+    background-color: #dd56c2;
+  }
+  body .content-container .game-container .btn-container .reset-btn:active {
+    background-color: #ea96d9;
+  }
+}
+/*# sourceMappingURL=game2.css.map */
