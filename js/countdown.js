@@ -1,6 +1,6 @@
 function countdown(){
     // bd = new Date('2021-07-08 00:00:00');
-    bd = new Date('2021-07-04 10:43:00');
+    bd = new Date('2021-07-08 00:00:00');
     bdDay = bd.getDate();
     bdHours = bd.getHours();
     bdMinutes = bd.getMinutes();
